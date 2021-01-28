@@ -4,7 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My TODO List</title>
-    <script src="utils.js"></script>
+    <script src="main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div id="conntrol-section">
+      <input id="text-input" />
+      <select id="priority-selector">
+        <option id="option" value="1">1</option>
+        <option id="option" value="2">2</option>
+        <option id="option" value="3">3</option>
+        <option id="option" value="4">4</option>
+        <option id="option" value="5">5</option>
+      </select>
+      <button id="add-button">Submit</button>
+    </div>
+    <div id="view-section"></div>
+  </body>
 </html>
