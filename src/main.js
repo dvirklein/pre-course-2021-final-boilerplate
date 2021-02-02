@@ -56,6 +56,7 @@ async function main() {
     editButton.classList.add("edit-button");
     editButton.innerHTML = "Edit";
     let newInputBox = document.createElement("input");
+    newInputBox.classList.add("edit-input");
     Container.append(newInputBox);
     newInputBox.hidden = true;
     Container.append(editButton);
@@ -159,6 +160,7 @@ async function main() {
     editButton.classList.add("edit-button");
     editButton.innerHTML = "Edit";
     let newInputBox = document.createElement("input");
+    newInputBox.classList.add("edit-input");
     Container.append(newInputBox);
     newInputBox.hidden = true;
     Container.append(editButton);
@@ -228,10 +230,23 @@ async function main() {
     });
   }
 }
+// let containerCompleted = document.getElementById("view-section");
+// containerCompleted.addEventListener("click", Completed);
+
+// // function Completed(event) {
+// //   if (
+//     event.target.className === "delete-button" ||
+//     event.target.className === "edit-button"
+//   ) {
+//     return;
+//   }
+//   let item = event.target.closest(".todo-container");
+//   item.classList.toggle("checked-animation");
+// }
+
 function darkMode() {
   let body = document.body;
   body.classList.toggle("dark");
 }
-
 main();
 //
